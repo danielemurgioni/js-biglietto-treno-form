@@ -36,12 +36,18 @@ console.log(`${ticketDiscount.toFixed(2)} costo del biglietto`);
 
 */
 
-
-//connetto il programma alla html
-let kilometers = document.getElementById("kilometers");
-let age = document.getElementById("age");
+//connetto il DOM a javascript
+let inputKilometers = document.getElementById("kilometers");
+let inputAge = document.getElementById("age");
 let btnConfirm = document.getElementById("btn-confirm");
+
+console.log(inputKilometers);
+console.log(inputAge);
+console.log(btnConfirm);
+
+// prendo la valuta degli input
+let kilometers = inputKilometers.value;
+let age = inputAge.value;
 
 console.log(kilometers);
 console.log(age);
-console.log(btnConfirm);
