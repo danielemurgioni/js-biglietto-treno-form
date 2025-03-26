@@ -1,3 +1,5 @@
+/* calcolo del biglietto del treno
+
 // chiedo all'utente il numero di chilometri che vuole percorrere
 
 let kilometers = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
@@ -31,3 +33,15 @@ console.log(ticketDiscount)
 
 // con toFixed il valore number di ticketCost diventa string, ma arrotondo le cifre decimali del numero a 2
 console.log(`${ticketDiscount.toFixed(2)} costo del biglietto`);
+
+*/
+
+
+//connetto il programma alla html
+let kilometers = document.getElementById("kilometers");
+let age = document.getElementById("age");
+let btnConfirm = document.getElementById("btn-confirm");
+
+console.log(kilometers);
+console.log(age);
+console.log(btnConfirm);
