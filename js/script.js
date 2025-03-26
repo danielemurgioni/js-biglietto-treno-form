@@ -1,14 +1,16 @@
 // connetto il DOM a javascript
-// e prendo il loro valore con .value degli input
-let kilometers = document.getElementById("kilometers").value;
-let age = document.getElementById("age").value;
+// se prendo il loro valore con .value direttamente dall'input il valore mi risulterà vuoto
+let kilometers = document.getElementById("kilometers");
+let age = document.getElementById("age");
 let btnConfirm = document.getElementById("btn-confirm");
 
-console.log(kilometers);
-console.log(age);
-
-btnConfirm.addEventListener("click", () => {
-    trainTicketCost(kilometers, age);
+btnConfirm.addEventListener("click", (event) => {
+    // con preventDefault impedisco alla pagina l'auto-refresh cosi che io possa visualizare il risultato
+    event.preventDefault();
+    // prendo il valore quando clicco il bottone
+    let valueKilometers = kilometers.value.trim();
+    let valueAge = age.value.trim();
+    trainTicketCost(valueKilometers, valueAge);
 });
 
 //Function
