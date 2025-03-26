@@ -12,16 +12,17 @@
     <title>Esercizio n24</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <div class="container">
         <main>
-            <h1>Calcola il prezzo del tuo biglietto</h1>
-            <div class="container">
+            <h2 class="text-light text-center text-uppercase">Calcola il prezzo del tuo biglietto</h2>
+            <!-- form -->
+            <div class="container bg-dark-subtle p-3 mb-2 rounded">
                 <form>
                     <!-- name -->
                     <div class="mb-3">
-                        <label for="namesurname" class="form-label">Nome Cognome</label>
-                        <input type="text" class="form-control" id="namesurname" placeholder="Inserisci nome e cognome">
+                        <label for="name-surname" class="form-label">Nome Cognome</label>
+                        <input type="text" class="form-control" id="name-surname" placeholder="Inserisci nome e cognome">
                     </div>
                     <!-- kilometers -->
                     <div class="mb-3">
@@ -36,6 +37,17 @@
                     <!-- show result -->
                     <button id="btn-confirm" class="btn btn-primary">Conferma</button>
                 </form>
+            </div>
+            <h2 class="text-light text-center text-uppercase">Il tuo biglietto</h2>
+            <!-- risultato del form -->
+            <div class="container bg-dark-subtle p-3 rounded">
+                <ul class="list-group">
+                    <li class="list-group-item"><h5>Nome Passeggero:</h5><div id="passenger-name"></div></li>
+                    <li class="list-group-item"><h5>Offerta:</h5><div id="ticket-type"></div></li>
+                    <li class="list-group-item"><h5>Carrozza:</h5><div id="wagon-number"></div></li>
+                    <li class="list-group-item"><h5>Codice CP:</h5><div id="cp-code"></div></li>
+                    <li class="list-group-item"><h5>Costo biglietto:</h5><div id="ticket-price"></div></li>
+                  </ul>
             </div>
         </main>
     </div>
